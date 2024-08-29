@@ -245,7 +245,12 @@ Extra - room_id: [7, 15]
   * L3 Hatch to Artic Underside/Door to Arctic Containment
   * Extra - door_idx: (99,)
   > Door to Geron Checkpoint
-      Morph Ball and Varia Suit and Can Climb High Jump Wall
+      All of the following:
+          Morph Ball
+          Any of the following:
+              Varia Suit and Can Climb High Jump Wall
+              # Climb the room by freezing Wavers - https://youtu.be/fcmvT--LvqU
+              Varia Suit and Stand On Frozen Enemies (Intermediate) and Can Freeze Enemies
   > Door to Waver Ward
       Varia Suit and Can Use Any Bombs
 
