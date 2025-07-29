@@ -5,6 +5,7 @@ import typing
 from collections import defaultdict
 from typing import TYPE_CHECKING, override
 
+import randovania
 from randovania.exporter import item_names
 from randovania.exporter.hints import credits_spoiler, guaranteed_item_hint
 from randovania.exporter.hints.hint_exporter import HintExporter
@@ -434,6 +435,9 @@ class FusionPatchDataFactory(PatchDataFactory[FusionConfiguration, FusionCosmeti
                     )
         return names
 
+    def _create_titlescreen_text(self) -> list[dict]:
+        return [{"LineNum": 1, "Text": f" RDV: {randovania.VERSION}"}]
+
     def create_memo_data(self) -> dict:
         """Used to generate pickup collection messages."""
         memo_data: dict = typing.cast(
@@ -478,6 +482,7 @@ class FusionPatchDataFactory(PatchDataFactory[FusionConfiguration, FusionCosmeti
             "NavigationText": self._create_nav_text(),
             "NavStationLocks": self._create_nav_locks(),
             "CreditsText": self._create_credits_text(),
+            "TitleText": self._create_titlescreen_text(),
             "DisableDemos": True,
             "RoomNames": self._create_room_names(),
             "AccessibilityPatches": True,

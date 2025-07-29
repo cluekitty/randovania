@@ -3627,6 +3627,12 @@
             "BlankLines": 1
         }
     ],
+    "TitleText": [
+        {
+            "LineNum": 1,
+            "Text": " RDV: 1.2.3"
+        }
+    ],
     "DisableDemos": true,
     "RoomNames": [
         {
